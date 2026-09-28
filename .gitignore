@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Bases crudas de la EPH: son pesadas (decenas de MB) y de descarga
+# pública desde INDEC. No se versionan; ver README para obtenerlas.
+data/raw/*.xlsx
+data/raw/*.txt
+data/raw/*.zip
+
+# Los CSV procesados sí se versionan (son livianos) para que el
+# dashboard funcione en Streamlit Cloud sin correr el ETL primero.
+!data/processed/*.csv
